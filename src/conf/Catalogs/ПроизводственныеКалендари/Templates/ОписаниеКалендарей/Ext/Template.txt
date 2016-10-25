@@ -1,0 +1,4 @@
+﻿<Items Description="Производственные календари" Columns="Code,Description">
+	<Item Code="РБ" Description="Республика Беларусь"/>
+	<Item Code="РФ" Description="Российская Федерация"/>
+</Items>

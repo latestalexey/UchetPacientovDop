@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.2">
+	<Subsystem uuid="9233322b-dfdb-4c66-91fe-1299292d40a5">
+		<Properties>
+			<Name>Администрирование</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Администрирование</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Администрирование, настройка, сервисные функции</v8:content>
+				</v8:item>
+			</Explanation>
+			<Picture>
+				<xr:Ref>CommonPicture.РазделАдминистрирование</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.НастройкаСистемнойУчетнойЗаписиЭлектроннойПочты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.АктивныеПользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">2a479b8f-7569-43d0-8ca3-9001d6ec57f0</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЖурналРегистрации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">239601eb-e8de-4d58-a32a-01ee52f6e698</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УдалениеПомеченныхОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.НастройкиПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Пользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГруппыДоступа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГруппыПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВнешниеПользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГруппыВнешнихПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТомаХраненияФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыКонтактнойИнформации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НаборыДополнительныхРеквизитовИСведений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПользовательскиеМакетыПечати</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.УчетныеЗаписиЭлектроннойПочты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПрофилиГруппДоступа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДополнительныеОтчетыИОбработки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ОписаниеИзмененийПрограммы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">440d115d-a769-427e-891a-88d65fba2057</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">4a749e8c-cb35-4bc4-9b31-fb5bc0eab474</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.АвтоматическоеИзвлечениеТекстов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">0ec0b1a0-5f0d-4a14-9a84-49098befa0af</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.СинхронизацияДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">3dec1ae7-90bb-45ab-aa04-48cfbc14742e</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВариантыОтчетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДатыЗапретаИзменения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">973967e5-1702-4fb8-ba36-70fd5b3b7e7c</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">162137ef-dea2-4ace-9e67-897dad0e7c3d</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">84da1ef8-1784-4dfc-b17a-7728aa7ff62a</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.РазделАдминистрирование48</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.РассылкиОтчетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АнализЖурналаРегистрации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">d9704b20-c29c-4e7f-b777-0ac9080a5631</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПанельАдминистрированияБСП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ПараметрыПроксиСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НомераОтсканированныхФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Валюты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">256618cc-0956-4cda-9691-e4ced68a791f</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.НастройкаОтправкиSMS</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">fabbac92-cb98-4087-b3fa-387482ed0d86</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаКурсовВалют</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">b56f25d2-72a9-4d80-8998-77ac3097c873</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">4a1e6d25-89e7-468a-aef1-6ded0154dca2</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ea97b67e-1182-49c3-b95a-8fcce4cd3d09</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ВерсииПодсистемОбластейДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ДатыЗапретаЗагрузки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ДатыЗапретаИзменения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ГрупповоеИзменениеРеквизитов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РезультатыОбновленияПрограммы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">344cb0de-315d-4d05-93f8-8a1f53208470</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">c9035b0f-cfc4-4761-9ba0-a8aacfaa9c72</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СведенияОПользователях</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ПанельОтчетовАдминистрирование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">4f0bda80-2246-43be-95f8-ae8480682cd5</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ДополнительныеОбработкиАдминистрирование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ДополнительныеОтчетыАдминистрирование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">45af8f5d-d505-466b-a798-19f2219a180c</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.АдресныеОбъекты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">6b0ddefa-ee70-4b27-989f-e23c734ab943</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПереносФайловВТома</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОбъемНенужныхФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">f4554046-493e-4960-94df-0a8b9d02f474</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">af071a52-212b-4131-98e6-81f6048a70e6</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ПрогрессОтложенногоОбновления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">304525f8-c697-4835-b0a6-4ed3cbcaf3c6</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.УниверсальныйОтчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">26986f8d-d56d-4641-9184-2632d0881cca</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">4d660fec-4a76-470e-bba9-3d031941b289</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.НастройкаКомандПечати</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">e25b2b10-bf08-42db-9642-861efc5e583b</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>
