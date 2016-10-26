@@ -49,7 +49,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor/>
-			<Version>1.0.0.7</Version>
+			<Version>1.0.0.8</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -464,6 +464,7 @@
 			<Role>ИзменениеУчастниковГруппДоступа</Role>
 			<Role>ДобавлениеИзменениеАдресныхСведений</Role>
 			<Role>РаботаСПапкамиФайлов</Role>
+			<Role>уп_Сотрудник</Role>
 			<CommonTemplate>КомпонентаTWAIN</CommonTemplate>
 			<CommonTemplate>КомпонентаПечатиQRКода</CommonTemplate>
 			<CommonTemplate>ПолучениеДереваОбработчиковОбновления</CommonTemplate>
