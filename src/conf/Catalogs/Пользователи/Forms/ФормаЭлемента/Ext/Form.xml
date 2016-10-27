@@ -255,7 +255,31 @@
 					<DataPath>Объект.ФизическоеЛицо</DataPath>
 					<ContextMenu name="ФизическоеЛицоКонтекстноеМеню" id="297"/>
 					<ExtendedTooltip name="ФизическоеЛицоРасширеннаяПодсказка" id="298"/>
+					<Events>
+						<Event name="OnChange">ФизическоеЛицоПриИзменении</Event>
+						<Event name="Creating">ФизическоеЛицоСоздание</Event>
+					</Events>
 				</InputField>
+				<LabelDecoration name="СоздатьСотрудника" id="346">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сотрудник: Создать</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="СоздатьСотрудникаКонтекстноеМеню" id="347"/>
+					<ExtendedTooltip name="СоздатьСотрудникаРасширеннаяПодсказка" id="348"/>
+					<Events>
+						<Event name="Click">СоздатьСотрудникаНажатие</Event>
+					</Events>
+				</LabelDecoration>
+				<LabelField name="Сотрудник" id="343">
+					<DataPath>Сотрудник</DataPath>
+					<Hiperlink>true</Hiperlink>
+					<ContextMenu name="СотрудникКонтекстноеМеню" id="344"/>
+					<ExtendedTooltip name="СотрудникРасширеннаяПодсказка" id="345"/>
+				</LabelField>
 				<InputField name="Подразделение" id="299">
 					<DataPath>Объект.Подразделение</DataPath>
 					<ContextMenu name="ПодразделениеКонтекстноеМеню" id="300"/>
@@ -1455,6 +1479,17 @@
 				</v8:item>
 			</Title>
 			<Type/>
+		</Attribute>
+		<Attribute name="Сотрудник" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сотрудник</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>

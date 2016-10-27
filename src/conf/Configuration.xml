@@ -473,31 +473,37 @@
 			<FilterCriterion>СвязанныеДокументы</FilterCriterion>
 			<FilterCriterion>ФайлыВТоме</FilterCriterion>
 			<CommonModule>АдминистрированиеКластераCOMКлиентСервер</CommonModule>
-			<CommonModule>ГрафикиРаботыКлиентСервер</CommonModule>
-			<CommonModule>ВариантыОтчетовКлиентСервер</CommonModule>
-			<CommonModule>ВзаимодействияКлиентПереопределяемый</CommonModule>
-			<CommonModule>АдминистрированиеКластераКлиентСервер</CommonModule>
-			<CommonModule>АнализЖурналаРегистрацииСлужебный</CommonModule>
-			<CommonModule>ВзаимодействияКлиентСервер</CommonModule>
-			<CommonModule>ВариантыОтчетовПовтИсп</CommonModule>
-			<CommonModule>ВзаимодействияКлиентСерверПовтИспПереопределяемый</CommonModule>
-			<CommonModule>ВзаимодействияКлиент</CommonModule>
 			<CommonModule>АдминистрированиеКластераRASКлиентСервер</CommonModule>
-			<CommonModule>ВзаимодействияПереопределяемый</CommonModule>
-			<CommonModule>Взаимодействия</CommonModule>
+			<CommonModule>АдминистрированиеКластераКлиентСервер</CommonModule>
+			<CommonModule>АдресныйКлассификатор</CommonModule>
+			<CommonModule>АдресныйКлассификаторВызовСервера</CommonModule>
+			<CommonModule>АдресныйКлассификаторКлиент</CommonModule>
+			<CommonModule>АдресныйКлассификаторКлиентСервер</CommonModule>
+			<CommonModule>АдресныйКлассификаторПовтИсп</CommonModule>
+			<CommonModule>АдресныйКлассификаторСлужебный</CommonModule>
 			<CommonModule>АнализЖурналаРегистрацииКлиент</CommonModule>
-			<CommonModule>ВзаимодействияСобытия</CommonModule>
-			<CommonModule>ВариантыОтчетовВызовСервера</CommonModule>
-			<CommonModule>ВзаимодействияВызовСервера</CommonModule>
-			<CommonModule>ВнешниеПользователи</CommonModule>
-			<CommonModule>ГрупповоеИзменениеОбъектовКлиент</CommonModule>
-			<CommonModule>ДатыЗапретаИзмененияПереопределяемый</CommonModule>
-			<CommonModule>ГрафикиРаботы</CommonModule>
-			<CommonModule>ДатыЗапретаИзменения</CommonModule>
-			<CommonModule>ВариантыОтчетовКлиент</CommonModule>
-			<CommonModule>ГрупповоеИзменениеОбъектовПереопределяемый</CommonModule>
-			<CommonModule>ВариантыОтчетовПереопределяемый</CommonModule>
+			<CommonModule>АнализЖурналаРегистрацииСлужебный</CommonModule>
 			<CommonModule>ВариантыОтчетов</CommonModule>
+			<CommonModule>ВариантыОтчетовВызовСервера</CommonModule>
+			<CommonModule>ВариантыОтчетовКлиент</CommonModule>
+			<CommonModule>ВариантыОтчетовКлиентСервер</CommonModule>
+			<CommonModule>ВариантыОтчетовПереопределяемый</CommonModule>
+			<CommonModule>ВариантыОтчетовПовтИсп</CommonModule>
+			<CommonModule>Взаимодействия</CommonModule>
+			<CommonModule>ВзаимодействияВызовСервера</CommonModule>
+			<CommonModule>ВзаимодействияКлиент</CommonModule>
+			<CommonModule>ВзаимодействияКлиентПереопределяемый</CommonModule>
+			<CommonModule>ВзаимодействияКлиентСервер</CommonModule>
+			<CommonModule>ВзаимодействияКлиентСерверПовтИспПереопределяемый</CommonModule>
+			<CommonModule>ВзаимодействияПереопределяемый</CommonModule>
+			<CommonModule>ВзаимодействияСобытия</CommonModule>
+			<CommonModule>ВнешниеПользователи</CommonModule>
+			<CommonModule>ГрафикиРаботы</CommonModule>
+			<CommonModule>ГрафикиРаботыКлиентСервер</CommonModule>
+			<CommonModule>ГрупповоеИзменениеОбъектовКлиент</CommonModule>
+			<CommonModule>ГрупповоеИзменениеОбъектовПереопределяемый</CommonModule>
+			<CommonModule>ДатыЗапретаИзменения</CommonModule>
+			<CommonModule>ДатыЗапретаИзмененияПереопределяемый</CommonModule>
 			<CommonModule>ДатыЗапретаИзмененияСлужебный</CommonModule>
 			<CommonModule>ДатыЗапретаИзмененияСлужебныйКлиентСервер</CommonModule>
 			<CommonModule>ДатыЗапретаИзмененияСлужебныйПовтИсп</CommonModule>
@@ -550,6 +556,7 @@
 			<CommonModule>ОбновлениеИнформационнойБазыСлужебныйВызовСервера</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазыСлужебныйПовтИсп</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазыСобытия</CommonModule>
+			<CommonModule>ОбновлениеИнформационнойБазыУчетПациентов</CommonModule>
 			<CommonModule>ОбщегоНазначения</CommonModule>
 			<CommonModule>ОбщегоНазначенияВызовСервера</CommonModule>
 			<CommonModule>ОбщегоНазначенияГлобальный</CommonModule>
@@ -619,6 +626,15 @@
 			<CommonModule>РаботаСПочтовымиСообщениямиКлиентПереопределяемый</CommonModule>
 			<CommonModule>РаботаСПочтовымиСообщениямиПереопределяемый</CommonModule>
 			<CommonModule>РаботаСПочтовымиСообщениямиСлужебный</CommonModule>
+			<CommonModule>РаботаСФайлами</CommonModule>
+			<CommonModule>РаботаСФайламиКлиент</CommonModule>
+			<CommonModule>РаботаСФайламиКлиентПереопределяемый</CommonModule>
+			<CommonModule>РаботаСФайламиКлиентСервер</CommonModule>
+			<CommonModule>РаботаСФайламиПереопределяемый</CommonModule>
+			<CommonModule>РаботаСФайламиСлужебный</CommonModule>
+			<CommonModule>РаботаСФайламиСлужебныйВызовСервера</CommonModule>
+			<CommonModule>РаботаСФайламиСлужебныйКлиент</CommonModule>
+			<CommonModule>РаботаСФайламиСлужебныйКлиентПовтИсп</CommonModule>
 			<CommonModule>РассылкаОтчетов</CommonModule>
 			<CommonModule>РассылкаОтчетовВызовСервера</CommonModule>
 			<CommonModule>РассылкаОтчетовКлиент</CommonModule>
@@ -643,6 +659,15 @@
 			<CommonModule>ТекущиеДелаСлужебныйПовтИсп</CommonModule>
 			<CommonModule>УдалениеПомеченныхОбъектовПереопределяемый</CommonModule>
 			<CommonModule>УдалениеПомеченныхОбъектовСлужебный</CommonModule>
+			<CommonModule>уп_РаботаСГрафикомСервер</CommonModule>
+			<CommonModule>уп_СотрудникиПовторноеИспользование</CommonModule>
+			<CommonModule>УправлениеДоступом</CommonModule>
+			<CommonModule>УправлениеДоступомПереопределяемый</CommonModule>
+			<CommonModule>УправлениеДоступомСлужебный</CommonModule>
+			<CommonModule>УправлениеДоступомСлужебныйВызовСервера</CommonModule>
+			<CommonModule>УправлениеДоступомСлужебныйКлиент</CommonModule>
+			<CommonModule>УправлениеДоступомСлужебныйКлиентСервер</CommonModule>
+			<CommonModule>УправлениеДоступомСлужебныйПовтИсп</CommonModule>
 			<CommonModule>УправлениеКонтактнойИнформацией</CommonModule>
 			<CommonModule>УправлениеКонтактнойИнформациейКлиент</CommonModule>
 			<CommonModule>УправлениеКонтактнойИнформациейКлиентСервер</CommonModule>
@@ -674,31 +699,7 @@
 			<CommonModule>ФайловыеФункцииСлужебныйКлиентСервер</CommonModule>
 			<CommonModule>ФайловыеФункцииСлужебныйПовтИсп</CommonModule>
 			<CommonModule>ФизическиеЛицаКлиентСервер</CommonModule>
-			<CommonModule>УправлениеДоступом</CommonModule>
-			<CommonModule>УправлениеДоступомПереопределяемый</CommonModule>
-			<CommonModule>УправлениеДоступомСлужебный</CommonModule>
-			<CommonModule>УправлениеДоступомСлужебныйВызовСервера</CommonModule>
-			<CommonModule>УправлениеДоступомСлужебныйКлиент</CommonModule>
-			<CommonModule>УправлениеДоступомСлужебныйКлиентСервер</CommonModule>
-			<CommonModule>УправлениеДоступомСлужебныйПовтИсп</CommonModule>
-			<CommonModule>ОбновлениеИнформационнойБазыУчетПациентов</CommonModule>
-			<CommonModule>АдресныйКлассификатор</CommonModule>
-			<CommonModule>АдресныйКлассификаторВызовСервера</CommonModule>
-			<CommonModule>АдресныйКлассификаторКлиент</CommonModule>
-			<CommonModule>АдресныйКлассификаторКлиентСервер</CommonModule>
-			<CommonModule>АдресныйКлассификаторПовтИсп</CommonModule>
-			<CommonModule>АдресныйКлассификаторСлужебный</CommonModule>
-			<CommonModule>РаботаСФайлами</CommonModule>
-			<CommonModule>РаботаСФайламиКлиент</CommonModule>
-			<CommonModule>РаботаСФайламиКлиентПереопределяемый</CommonModule>
-			<CommonModule>РаботаСФайламиКлиентСервер</CommonModule>
-			<CommonModule>РаботаСФайламиПереопределяемый</CommonModule>
-			<CommonModule>РаботаСФайламиСлужебный</CommonModule>
-			<CommonModule>РаботаСФайламиСлужебныйВызовСервера</CommonModule>
-			<CommonModule>РаботаСФайламиСлужебныйКлиент</CommonModule>
-			<CommonModule>РаботаСФайламиСлужебныйКлиентПовтИсп</CommonModule>
-			<CommonModule>уп_РаботаСГрафикомСервер</CommonModule>
-			<CommonModule>уп_СотрудникиПовторноеИспользование</CommonModule>
+			<CommonModule>уп_СправочникиПереопределяемый</CommonModule>
 			<ExchangePlan>ОбновлениеИнформационнойБазы</ExchangePlan>
 			<XDTOPackage>ApplicationExtensionsManifest_1_0_0_1</XDTOPackage>
 			<XDTOPackage>ApplicationExtensionsPermissions_1_0_0_1</XDTOPackage>
@@ -743,6 +744,7 @@
 			<EventSubscription>СкопироватьРеквизитыВерсииФайловВФайл</EventSubscription>
 			<EventSubscription>УстановитьПометкуУдаленияФайлов</EventSubscription>
 			<EventSubscription>ПереопределитьПолучаемуюФормуПрисоединенногоФайла</EventSubscription>
+			<EventSubscription>уп_СправочникПолучениеФормы</EventSubscription>
 			<ScheduledJob>ЗагрузкаКурсовВалют</ScheduledJob>
 			<ScheduledJob>КонтрольАктивностиПользователей</ScheduledJob>
 			<ScheduledJob>ИзвлечениеТекста</ScheduledJob>
