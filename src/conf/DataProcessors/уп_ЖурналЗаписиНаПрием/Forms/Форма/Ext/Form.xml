@@ -1,0 +1,556 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.2">
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="1">
+			<ToolTipRepresentation>None</ToolTipRepresentation>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<RadioButtonField name="ПериодПереключатель" id="3">
+					<DataPath>ПериодПереключатель</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<RadioButtonType>Tumbler</RadioButtonType>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xs:string">День</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xs:string">Неделя</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xs:string">Месяц</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ПериодПереключательКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ПериодПереключательРасширеннаяПодсказка" id="5"/>
+					<Events>
+						<Event name="OnChange">ПериодПереключательПриИзменении</Event>
+					</Events>
+				</RadioButtonField>
+				<Button name="УменьшитьПериод" id="6">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.УменьшитьПериод</CommandName>
+					<ExtendedTooltip name="УменьшитьПериодРасширеннаяПодсказка" id="7"/>
+				</Button>
+				<InputField name="ДатаНачала" id="8">
+					<DataPath>Период.StartDate</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<Width>9</Width>
+					<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="10"/>
+					<Events>
+						<Event name="OnChange">ДатаНачалаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<Button name="УвеличитьПериод" id="11">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.УвеличитьПериод</CommandName>
+					<ExtendedTooltip name="УвеличитьПериодРасширеннаяПодсказка" id="12"/>
+				</Button>
+				<RadioButtonField name="СотрудникКабиентПереключатель" id="13">
+					<DataPath>СотрудникКабиентПереключатель</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<RadioButtonType>Tumbler</RadioButtonType>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>По сотрудникам</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">Сотрудник</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>По помещениям</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">Помещение</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="СотрудникКабиентПереключательКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="СотрудникКабиентПереключательРасширеннаяПодсказка" id="15"/>
+					<Events>
+						<Event name="OnChange">СотрудникКабиентПереключательПриИзменении</Event>
+					</Events>
+				</RadioButtonField>
+				<UsualGroup name="ГруппаНастройки" id="18">
+					<ToolTipRepresentation>None</ToolTipRepresentation>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="19"/>
+					<ChildItems>
+						<PictureDecoration name="Декорация1" id="22">
+							<Height>1</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="24"/>
+						</PictureDecoration>
+						<Button name="Обновить" id="47">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.Обновить</CommandName>
+							<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="48"/>
+						</Button>
+						<Button name="УстановитьОтбор" id="38">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.УстановитьОтбор</CommandName>
+							<ExtendedTooltip name="УстановитьОтборРасширеннаяПодсказка" id="39"/>
+						</Button>
+						<Button name="ПредварительныйПросмотр" id="36">
+							<Type>UsualButton</Type>
+							<Representation>Picture</Representation>
+							<CommandName>Form.Item.ТабличныйДокумент.StandardCommand.Preview</CommandName>
+							<ExtendedTooltip name="ПредварительныйПросмотрРасширеннаяПодсказка" id="37"/>
+						</Button>
+						<Button name="Настройки" id="20">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.Настройки</CommandName>
+							<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="21"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОтбор" id="40">
+			<ToolTipRepresentation>None</ToolTipRepresentation>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОтборРасширеннаяПодсказка" id="41"/>
+			<ChildItems>
+				<LabelDecoration name="ДекорацияОтбор" id="44">
+					<TextColor>style:FieldSelectionBackColor</TextColor>
+					<ContextMenu name="ДекорацияОтборКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ДекорацияОтборРасширеннаяПодсказка" id="46"/>
+				</LabelDecoration>
+				<Button name="СнятьОтбор" id="42">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.СнятьОтбор</CommandName>
+					<ExtendedTooltip name="СнятьОтборРасширеннаяПодсказка" id="43"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<SpreadSheetDocumentField name="ТабличныйДокумент" id="25">
+			<DataPath>ТабличныйДокумент</DataPath>
+			<DefaultItem>true</DefaultItem>
+			<TitleLocation>None</TitleLocation>
+			<Edit>true</Edit>
+			<ContextMenu name="ТабличныйДокументКонтекстноеМеню" id="26">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ТабличныйДокументКонтекстноеМенюДобавитьЗапись" id="28">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ДобавитьЗапись</CommandName>
+						<ExtendedTooltip name="ТабличныйДокументКонтекстноеМенюДобавитьЗаписьРасширеннаяПодсказка" id="29"/>
+					</Button>
+					<Button name="ТабличныйДокументКонтекстноеМенюИзменитьЗапись" id="30">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ИзменитьЗапись</CommandName>
+						<ExtendedTooltip name="ТабличныйДокументКонтекстноеМенюИзменитьЗаписьРасширеннаяПодсказка" id="31"/>
+					</Button>
+					<Button name="ТабличныйДокументКонтекстноеМенюУдалитьЗапись" id="32">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.УдалитьЗапись</CommandName>
+						<ExtendedTooltip name="ТабличныйДокументКонтекстноеМенюУдалитьЗаписьРасширеннаяПодсказка" id="33"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
+			<ExtendedTooltip name="ТабличныйДокументРасширеннаяПодсказка" id="27"/>
+			<Events>
+				<Event name="OnChange">ТабличныйДокументПриИзменении</Event>
+				<Event name="DragCheck">ТабличныйДокументПроверкаПеретаскивания</Event>
+				<Event name="OnActivateArea">ТабличныйДокументПриАктивизацииОбласти</Event>
+				<Event name="Selection">ТабличныйДокументВыбор</Event>
+				<Event name="DetailProcessing">ТабличныйДокументОбработкаРасшифровки</Event>
+				<Event name="DragStart">ТабличныйДокументНачалоПеретаскивания</Event>
+				<Event name="Drag">ТабличныйДокументПеретаскивание</Event>
+			</Events>
+		</SpreadSheetDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.уп_ЖурналЗаписиНаПрием</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ВремяНачалаРаботы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время начала работы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Time</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВремяОкончанияРаботы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время окончания работы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Time</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КратностьВремениЗаписи" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кратность времени записи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПериодПереключатель" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период переключатель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СотрудникКабиентПереключатель" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сотрудник кабиент переключатель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЦветЗаписиКлиента" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет записи клиента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Color</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЦветНеявки" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет неявки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Color</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЦветПервичнойЗаписи" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет первичной записи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Color</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЦветПодтвержденнойЗаписи" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет подтвержденной записи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Color</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЦветПрочейЗаписи" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет прочей записи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Color</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТабличныйДокумент" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Табличный документ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Период" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокЗначенийОтбора" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список значений отбора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="УменьшитьПериод" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уменьшить период</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уменьшить период</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveLeft</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УменьшитьПериод</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="УвеличитьПериод" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Увеличить период</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Увеличить период</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveRight</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УвеличитьПериод</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="Настройки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ПрочиеПользовательскиеНастройки</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Настройки</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ДобавитьЗапись" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить запись</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДобавитьЗапись</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ИзменитьЗапись" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить запись</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Change</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ИзменитьЗапись</Action>
+		</Command>
+		<Command name="УдалитьЗапись" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить запись</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить запись</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Delete</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УдалитьЗапись</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="УстановитьОтбор" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить отбор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить отбор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.FilterCriterion</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УстановитьОтбор</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="СнятьОтбор" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять отбор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять отбор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СнятьОтбор</Action>
+		</Command>
+		<Command name="Обновить" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Обновить</Action>
+			<Representation>Picture</Representation>
+		</Command>
+	</Commands>
+</Form>

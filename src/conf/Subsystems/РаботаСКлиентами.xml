@@ -27,6 +27,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.Взаимодействия</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.уп_Договоры</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.уп_ОтчетОПроцедуре</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.уп_КлассификаторРодства</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Контрагенты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.уп_ПредварительнаяЗапись</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

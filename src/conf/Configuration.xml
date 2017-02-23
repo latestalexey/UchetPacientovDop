@@ -49,7 +49,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor/>
-			<Version>1.0.0.8</Version>
+			<Version>1.0.1.10</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -61,11 +61,11 @@
 			<FormDataSettingsStorage/>
 			<DynamicListsUserSettingsStorage/>
 			<Content/>
-			<DefaultReportForm/>
-			<DefaultReportVariantForm/>
-			<DefaultReportSettingsForm/>
+			<DefaultReportForm>CommonForm.ФормаОтчета</DefaultReportForm>
+			<DefaultReportVariantForm>CommonForm.ФормаВариантаОтчета</DefaultReportVariantForm>
+			<DefaultReportSettingsForm>CommonForm.ФормаНастроекОтчета</DefaultReportSettingsForm>
 			<DefaultDynamicListSettingsForm/>
-			<DefaultSearchForm/>
+			<DefaultSearchForm>CommonForm.ФормаПоиска</DefaultSearchForm>
 			<RequiredMobileApplicationPermissions>
 				<v8:pair>
 					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Multimedia</v8:Key>
@@ -117,17 +117,17 @@
 			<ModalityUseMode>UseWithWarnings</ModalityUseMode>
 			<SynchronousPlatformExtensionAndAddInCallUseMode>Use</SynchronousPlatformExtensionAndAddInCallUseMode>
 			<InterfaceCompatibilityMode>TaxiEnableVersion8_2</InterfaceCompatibilityMode>
-			<CompatibilityMode>Version8_3_8</CompatibilityMode>
+			<CompatibilityMode>Version8_3_9</CompatibilityMode>
 			<DefaultConstantsForm/>
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
-			<Subsystem>Администрирование</Subsystem>
-			<Subsystem>ПодключаемыеОтчетыИОбработки</Subsystem>
-			<Subsystem>СтандартныеПодсистемы</Subsystem>
-			<Subsystem>КадровыйУчет</Subsystem>
-			<Subsystem>Органайзер</Subsystem>
 			<Subsystem>РаботаСКлиентами</Subsystem>
+			<Subsystem>Органайзер</Subsystem>
+			<Subsystem>Настройки</Subsystem>
+			<Subsystem>СтандартныеПодсистемы</Subsystem>
+			<Subsystem>ПодключаемыеОтчетыИОбработки</Subsystem>
+			<Subsystem>Администрирование</Subsystem>
 			<StyleItem>ВидДняПроизводственногоКалендаряВоскресеньеЦвет</StyleItem>
 			<StyleItem>ВидимыйВариантОтчетаЦвет</StyleItem>
 			<StyleItem>ВидДняПроизводственногоКалендаряПредпраздничныйЦвет</StyleItem>
@@ -700,6 +700,7 @@
 			<CommonModule>ФайловыеФункцииСлужебныйПовтИсп</CommonModule>
 			<CommonModule>ФизическиеЛицаКлиентСервер</CommonModule>
 			<CommonModule>уп_СправочникиПереопределяемый</CommonModule>
+			<CommonModule>уп_ПредварительнаяЗапись</CommonModule>
 			<ExchangePlan>ОбновлениеИнформационнойБазы</ExchangePlan>
 			<XDTOPackage>ApplicationExtensionsManifest_1_0_0_1</XDTOPackage>
 			<XDTOPackage>ApplicationExtensionsPermissions_1_0_0_1</XDTOPackage>
@@ -1016,6 +1017,7 @@
 			<Catalog>Сотрудники</Catalog>
 			<Catalog>Смены</Catalog>
 			<Catalog>уп_Договоры</Catalog>
+			<Catalog>уп_КлассификаторРодства</Catalog>
 			<Document>Встреча</Document>
 			<Document>ЗапланированноеВзаимодействие</Document>
 			<Document>СообщениеSMS</Document>
@@ -1024,6 +1026,7 @@
 			<Document>ЭлектронноеПисьмоИсходящее</Document>
 			<Document>уп_Сделка</Document>
 			<Document>уп_ОтчетОПроцедуре</Document>
+			<Document>уп_ПредварительнаяЗапись</Document>
 			<DocumentJournal>Взаимодействия</DocumentJournal>
 			<Enum>ВариантыSMTPАутентификации</Enum>
 			<Enum>ВариантыВажностиВзаимодействия</Enum>
@@ -1103,6 +1106,7 @@
 			<DataProcessor>ПереносФайловВТома</DataProcessor>
 			<DataProcessor>уп_ГрафикПроцедур</DataProcessor>
 			<DataProcessor>уп_ГрафикСотрудников</DataProcessor>
+			<DataProcessor>уп_ЖурналЗаписиНаПрием</DataProcessor>
 			<InformationRegister>АдресныеОбъекты</InformationRegister>
 			<InformationRegister>БезопасноеХранилищеДанных</InformationRegister>
 			<InformationRegister>БезопасноеХранилищеДанныхОбластейДанных</InformationRegister>

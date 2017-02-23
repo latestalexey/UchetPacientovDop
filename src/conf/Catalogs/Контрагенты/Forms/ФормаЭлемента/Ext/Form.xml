@@ -208,16 +208,60 @@
 					</Title>
 					<ExtendedTooltip name="СтраницаОсновныеExtendedTooltip" id="99"/>
 					<ChildItems>
-						<InputField name="Отец" id="227">
-							<DataPath>Объект.Отец</DataPath>
-							<ContextMenu name="ОтецКонтекстноеМеню" id="228"/>
-							<ExtendedTooltip name="ОтецРасширеннаяПодсказка" id="229"/>
-						</InputField>
-						<InputField name="Мать" id="230">
-							<DataPath>Объект.Мать</DataPath>
-							<ContextMenu name="МатьКонтекстноеМеню" id="231"/>
-							<ExtendedTooltip name="МатьРасширеннаяПодсказка" id="232"/>
-						</InputField>
+						<Table name="Родственники" id="235">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Родственники</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="РодственникиКонтекстноеМеню" id="236"/>
+							<AutoCommandBar name="РодственникиКоманднаяПанель" id="237"/>
+							<ExtendedTooltip name="РодственникиРасширеннаяПодсказка" id="238"/>
+							<SearchStringAddition name="РодственникиСтрокаПоиска" id="239">
+								<AdditionSource>
+									<Item>Родственники</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РодственникиСтрокаПоискаКонтекстноеМеню" id="240"/>
+								<ExtendedTooltip name="РодственникиСтрокаПоискаРасширеннаяПодсказка" id="241"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="РодственникиСостояниеПросмотра" id="242">
+								<AdditionSource>
+									<Item>Родственники</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РодственникиСостояниеПросмотраКонтекстноеМеню" id="243"/>
+								<ExtendedTooltip name="РодственникиСостояниеПросмотраРасширеннаяПодсказка" id="244"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="РодственникиУправлениеПоиском" id="245">
+								<AdditionSource>
+									<Item>Родственники</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="РодственникиУправлениеПоискомКонтекстноеМеню" id="246"/>
+								<ExtendedTooltip name="РодственникиУправлениеПоискомРасширеннаяПодсказка" id="247"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="РодственникиНомерСтроки" id="248">
+									<DataPath>Объект.Родственники.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РодственникиНомерСтрокиКонтекстноеМеню" id="249"/>
+									<ExtendedTooltip name="РодственникиНомерСтрокиРасширеннаяПодсказка" id="250"/>
+								</LabelField>
+								<InputField name="РодственникиРодство" id="251">
+									<DataPath>Объект.Родственники.Родство</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РодственникиРодствоКонтекстноеМеню" id="252"/>
+									<ExtendedTooltip name="РодственникиРодствоРасширеннаяПодсказка" id="253"/>
+								</InputField>
+								<InputField name="РодственникиФизЛицо" id="254">
+									<DataPath>Объект.Родственники.ФизЛицо</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РодственникиФизЛицоКонтекстноеМеню" id="255"/>
+									<ExtendedTooltip name="РодственникиФизЛицоРасширеннаяПодсказка" id="256"/>
+								</InputField>
+							</ChildItems>
+						</Table>
 					</ChildItems>
 				</Page>
 				<Page name="СтраницаЗначенияПоУмолчанию" id="83">
@@ -251,6 +295,7 @@
 					</ChildItems>
 				</Page>
 				<Page name="ГруппаКонтактнаяИнформация" id="88">
+					<ReadOnly>true</ReadOnly>
 					<EnableContentChange>true</EnableContentChange>
 					<Title>
 						<v8:item>
@@ -266,118 +311,9 @@
 					</ToolTip>
 					<ExtendedTooltip name="ГруппаКонтактнаяИнформацияExtendedTooltip" id="105"/>
 					<ChildItems>
-						<UsualGroup name="ГруппаКонтактнаяИнформацияПолеEmailКонтрагента" id="203">
-							<EnableContentChange>true</EnableContentChange>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Email контрагента</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа контактная информация поле email контрагента</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Group>Horizontal</Group>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаКонтактнаяИнформацияПолеEmailКонтрагентаРасширеннаяПодсказка" id="204"/>
-							<ChildItems>
-								<InputField name="КонтактнаяИнформацияПолеEmailКонтрагента" id="131">
-									<DataPath>КонтактнаяИнформацияПолеEmailКонтрагента</DataPath>
-									<TitleLocation>Left</TitleLocation>
-									<TitleHeight>2</TitleHeight>
-									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-									<Width>25</Width>
-									<MaxWidth>25</MaxWidth>
-									<HorizontalStretch>false</HorizontalStretch>
-									<ContextMenu name="КонтактнаяИнформацияПолеEmailКонтрагентаКонтекстноеМеню" id="132"/>
-									<ExtendedTooltip name="КонтактнаяИнформацияПолеEmailКонтрагентаРасширеннаяПодсказка" id="133"/>
-									<Events>
-										<Event name="OnChange">Подключаемый_КонтактнаяИнформацияПриИзменении</Event>
-										<Event name="Clearing">Подключаемый_КонтактнаяИнформацияОчистка</Event>
-									</Events>
-								</InputField>
-								<Button name="КомандаКонтактнаяИнформацияПолеEmailКонтрагента" id="137">
-									<Type>UsualButton</Type>
-									<CommandName>Form.Command.КомандаКонтактнаяИнформацияПоле_ДемоEmailКонтрагента</CommandName>
-									<ExtendedTooltip name="КомандаКонтактнаяИнформацияПолеEmailКонтрагентаРасширеннаяПодсказка" id="138"/>
-								</Button>
-							</ChildItems>
-						</UsualGroup>
-						<UsualGroup name="ГруппаКонтактнаяИнформацияПолеSkypeКонтрагенты" id="220">
-							<EnableContentChange>true</EnableContentChange>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа контактная информация поле skype контрагенты</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа контактная информация поле skype контрагенты</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Group>Horizontal</Group>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаКонтактнаяИнформацияПолеSkypeКонтрагентыРасширеннаяПодсказка" id="221"/>
-							<ChildItems>
-								<InputField name="КонтактнаяИнформацияПолеSkypeКонтрагента" id="222">
-									<DataPath>КонтактнаяИнформацияПолеSkypeКонтрагента</DataPath>
-									<Width>25</Width>
-									<HorizontalStretch>false</HorizontalStretch>
-									<ContextMenu name="КонтактнаяИнформацияПолеSkypeКонтрагентаКонтекстноеМеню" id="223"/>
-									<ExtendedTooltip name="КонтактнаяИнформацияПолеSkypeКонтрагентаРасширеннаяПодсказка" id="224"/>
-								</InputField>
-								<Button name="КомандаКонтактнаяИнформацияПолеSkypeКонтрагенты" id="225">
-									<Type>UsualButton</Type>
-									<CommandName>Form.Command.КомандаКонтактнаяИнформацияПоле_ДемоSkypeКонтрагенты</CommandName>
-									<ExtendedTooltip name="КомандаКонтактнаяИнформацияПолеSkypeКонтрагентыРасширеннаяПодсказка" id="226"/>
-								</Button>
-							</ChildItems>
-						</UsualGroup>
-						<UsualGroup name="ГруппаКонтактнаяИнформацияПолеАдресКонтрагента" id="233">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа контактная информация поле адрес контрагента</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа контактная информация поле адрес контрагента</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаКонтактнаяИнформацияПолеАдресКонтрагентаРасширеннаяПодсказка" id="234"/>
-							<ChildItems>
-								<InputField name="КонтактнаяИнформацияПолеАдресКонтрагента" id="134">
-									<DataPath>КонтактнаяИнформацияПолеАдресКонтрагента</DataPath>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Адрес контрагента</v8:content>
-										</v8:item>
-									</ToolTip>
-									<ChoiceButton>true</ChoiceButton>
-									<ContextMenu name="КонтактнаяИнформацияПолеАдресКонтрагентаКонтекстноеМеню" id="135"/>
-									<ExtendedTooltip name="КонтактнаяИнформацияПолеАдресКонтрагентаРасширеннаяПодсказка" id="136"/>
-									<Events>
-										<Event name="OnChange">Подключаемый_КонтактнаяИнформацияПриИзменении</Event>
-										<Event name="StartChoice">Подключаемый_КонтактнаяИнформацияНачалоВыбора</Event>
-										<Event name="Clearing">Подключаемый_КонтактнаяИнформацияОчистка</Event>
-									</Events>
-								</InputField>
-							</ChildItems>
-						</UsualGroup>
 						<InputField name="СтранаРегистрации" id="207">
 							<DataPath>Объект.СтранаРегистрации</DataPath>
+							<Visible>false</Visible>
 							<OpenButton>false</OpenButton>
 							<ChoiceParameters>
 								<app:item name="РазрешитьДанныеКлассификатора">
@@ -399,6 +335,16 @@
 								<Event name="ChoiceProcessing">СтранаРегистрацииОбработкаВыбора</Event>
 							</Events>
 						</InputField>
+						<LabelDecoration name="Предупреждение" id="257">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Внимание! Изменение контактной информации производится в карточке физического лица.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПредупреждениеКонтекстноеМеню" id="258"/>
+							<ExtendedTooltip name="ПредупреждениеРасширеннаяПодсказка" id="259"/>
+						</LabelDecoration>
 					</ChildItems>
 				</Page>
 				<Page name="СтраницаДополнительныеРеквизиты" id="89">

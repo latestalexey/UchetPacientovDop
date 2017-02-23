@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.2">
+	<Item id="5c392486-5889-4a28-882b-ba662908e44a">
+		<Name>Бабушка</Name>
+		<Code xsi:type="xs:decimal">8</Code>
+		<Description>Бабушка</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="28690003-7337-48c8-a316-6607686ced4d">
+		<Name>Брат</Name>
+		<Code xsi:type="xs:decimal">20</Code>
+		<Description>Брат</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1c3a6f42-9d03-4d68-8205-db3705447ba5">
+		<Name>Внук</Name>
+		<Code xsi:type="xs:decimal">9</Code>
+		<Description>Внук</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cbf72639-647a-48c8-90ee-084aec4ffd93">
+		<Name>Внучка</Name>
+		<Code xsi:type="xs:decimal">10</Code>
+		<Description>Внучка</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9ec78e00-3ef6-4049-819f-b5045ba65e02">
+		<Name>Дедушка</Name>
+		<Code xsi:type="xs:decimal">7</Code>
+		<Description>Дедушка</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d8efe68b-13a2-4633-9fcb-f439796bab89">
+		<Name>Дочь</Name>
+		<Code xsi:type="xs:decimal">6</Code>
+		<Description>Дочь</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8170d417-e3cc-462a-b97b-4bba80a3516a">
+		<Name>ДругаяСтепеньРодства</Name>
+		<Code xsi:type="xs:decimal">70</Code>
+		<Description>Другая степень родства</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0dcd68b5-31b4-4c99-af4c-d67536704f6d">
+		<Name>Жена</Name>
+		<Code xsi:type="xs:decimal">2</Code>
+		<Description>Жена</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="47f456c0-25fd-4cc5-bc51-ee76d41e3722">
+		<Name>Мать</Name>
+		<Code xsi:type="xs:decimal">4</Code>
+		<Description>Мать</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="561e1aff-ecaa-41e5-a548-f3c8a7db2ada">
+		<Name>Мачеха</Name>
+		<Code xsi:type="xs:decimal">41</Code>
+		<Description>Мачеха</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="39fe46cc-0f49-4647-9807-73971d514a9c">
+		<Name>Муж</Name>
+		<Code xsi:type="xs:decimal">1</Code>
+		<Description>Муж</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0761df7a-7364-4d38-a69c-52c141168591">
+		<Name>Опекун</Name>
+		<Code xsi:type="xs:decimal">71</Code>
+		<Description>Опекун</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9474f5ca-20c8-4fed-bddc-a833d8d2abbc">
+		<Name>Отец</Name>
+		<Code xsi:type="xs:decimal">3</Code>
+		<Description>Отец</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1c562458-263f-479f-82ec-399d07a99042">
+		<Name>Отчим</Name>
+		<Code xsi:type="xs:decimal">40</Code>
+		<Description>Отчим</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="326d7004-1f34-4446-8b69-9d16629d91a1">
+		<Name>Падчерица</Name>
+		<Code xsi:type="xs:decimal">43</Code>
+		<Description>Падчерица</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4178750c-2705-4b29-a057-cc4e8b4b8831">
+		<Name>Пасынок</Name>
+		<Code xsi:type="xs:decimal">42</Code>
+		<Description>Пасынок</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9b0dcf48-6d6b-4294-a830-87c31e053196">
+		<Name>Сестра</Name>
+		<Code xsi:type="xs:decimal">21</Code>
+		<Description>Сестра</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6d470496-f153-4da2-a958-f066c364ab9d">
+		<Name>Сын</Name>
+		<Code xsi:type="xs:decimal">5</Code>
+		<Description>Сын</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>
