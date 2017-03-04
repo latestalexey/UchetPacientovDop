@@ -49,7 +49,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor/>
-			<Version>1.0.1.10</Version>
+			<Version>1.0.1.11</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -57,7 +57,7 @@
 			<AdditionalFullTextSearchDictionaries/>
 			<CommonSettingsStorage/>
 			<ReportsUserSettingsStorage/>
-			<ReportsVariantsStorage/>
+			<ReportsVariantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</ReportsVariantsStorage>
 			<FormDataSettingsStorage/>
 			<DynamicListsUserSettingsStorage/>
 			<Content/>
@@ -1077,6 +1077,7 @@
 			<Enum>ДействияСФайламиПоДвойномуЩелчку</Enum>
 			<Enum>ТипыФайловДляВстроенногоРедактора</Enum>
 			<Enum>уп_СостоянияГрафика</Enum>
+			<Enum>уп_СостоянияНазначений</Enum>
 			<Report>АнализЖурналаРегистрации</Report>
 			<Report>ДатыЗапретаЗагрузки</Report>
 			<Report>ИспользуемыеВнешниеРесурсы</Report>

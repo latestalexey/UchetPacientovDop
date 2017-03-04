@@ -42,6 +42,11 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
+		<InputField name="ДокументОснование" id="27">
+			<DataPath>Объект.ДокументОснование</DataPath>
+			<ContextMenu name="ДокументОснованиеКонтекстноеМеню" id="28"/>
+			<ExtendedTooltip name="ДокументОснованиеРасширеннаяПодсказка" id="29"/>
+		</InputField>
 		<InputField name="Организация" id="7">
 			<DataPath>Объект.Организация</DataPath>
 			<EditMode>EnterOnInput</EditMode>
@@ -61,7 +66,7 @@
 			<ExtendedTooltip name="КлиентРасширеннаяПодсказка" id="15"/>
 		</InputField>
 		<InputField name="Процедура" id="16">
-			<DataPath>Объект.ПроведеннаяПроцедура</DataPath>
+			<DataPath>Объект.Назначение</DataPath>
 			<EditMode>EnterOnInput</EditMode>
 			<ContextMenu name="ПроцедураКонтекстноеМеню" id="17"/>
 			<ExtendedTooltip name="ПроцедураРасширеннаяПодсказка" id="18"/>

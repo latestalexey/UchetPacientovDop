@@ -253,6 +253,10 @@
 				</UsualGroup>
 				<InputField name="ФизическоеЛицо" id="296">
 					<DataPath>Объект.ФизическоеЛицо</DataPath>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>true</ChoiceButton>
+					<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+					<CreateButton>true</CreateButton>
 					<ContextMenu name="ФизическоеЛицоКонтекстноеМеню" id="297"/>
 					<ExtendedTooltip name="ФизическоеЛицоРасширеннаяПодсказка" id="298"/>
 					<Events>
@@ -260,26 +264,19 @@
 						<Event name="Creating">ФизическоеЛицоСоздание</Event>
 					</Events>
 				</InputField>
-				<LabelDecoration name="СоздатьСотрудника" id="346">
-					<Title formatted="false">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Сотрудник: Создать</v8:content>
-						</v8:item>
-					</Title>
-					<Hyperlink>true</Hyperlink>
-					<ContextMenu name="СоздатьСотрудникаКонтекстноеМеню" id="347"/>
-					<ExtendedTooltip name="СоздатьСотрудникаРасширеннаяПодсказка" id="348"/>
-					<Events>
-						<Event name="Click">СоздатьСотрудникаНажатие</Event>
-					</Events>
-				</LabelDecoration>
-				<LabelField name="Сотрудник" id="343">
-					<DataPath>Сотрудник</DataPath>
-					<Hiperlink>true</Hiperlink>
+				<InputField name="Сотрудник" id="343">
+					<DataPath>Объект.Сотрудник</DataPath>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>true</ChoiceButton>
+					<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+					<OpenButton>true</OpenButton>
+					<CreateButton>true</CreateButton>
 					<ContextMenu name="СотрудникКонтекстноеМеню" id="344"/>
 					<ExtendedTooltip name="СотрудникРасширеннаяПодсказка" id="345"/>
-				</LabelField>
+					<Events>
+						<Event name="Creating">СотрудникСоздание</Event>
+					</Events>
+				</InputField>
 				<InputField name="Подразделение" id="299">
 					<DataPath>Объект.Подразделение</DataPath>
 					<ContextMenu name="ПодразделениеКонтекстноеМеню" id="300"/>

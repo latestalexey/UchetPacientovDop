@@ -302,11 +302,11 @@
 				<ChildObjects>
 					<Attribute uuid="0b86b578-a810-4439-8fed-4837106e2ef2">
 						<Properties>
-							<Name>Процедура</Name>
+							<Name>Назначение</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Процедура</v8:content>
+									<v8:content>Назначение</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>

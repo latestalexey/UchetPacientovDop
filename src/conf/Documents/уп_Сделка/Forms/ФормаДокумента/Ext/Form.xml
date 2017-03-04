@@ -114,7 +114,7 @@
 					<ExtendedTooltip name="СписокПроцедурНомерСтрокиРасширеннаяПодсказка" id="34"/>
 				</LabelField>
 				<InputField name="СписокПроцедурПроцедура" id="35">
-					<DataPath>Объект.СписокПроцедур.Процедура</DataPath>
+					<DataPath>Объект.СписокПроцедур.Назначение</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="СписокПроцедурПроцедураКонтекстноеМеню" id="36"/>
 					<ExtendedTooltip name="СписокПроцедурПроцедураРасширеннаяПодсказка" id="37"/>
